@@ -17,3 +17,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const backgrounds = [
+        'fondo1.jpg',
+        'fondo2.jpg',
+        'fondo3.jpg'
+    ];
+    const hero = document.querySelector('.hero-image');
+    let current = 0;
+    function changeBackground() {
+        hero.style.backgroundImage = `url('${backgrounds[current]}')`;
+        current = (current + 1) % backgrounds.length;
+    }
+    changeBackground();
+    setInterval(changeBackground, 5000);
+});
