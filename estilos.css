@@ -68,7 +68,7 @@
   cursor: pointer;
 }
 .footer-bg {
-    background: linear-gradient(120deg, #278ea5 0%, #021c1e 100%);
+    background: #815034;
     color: #fff;
 }
 .footer-bg h3,
@@ -82,7 +82,7 @@
     fill: #f5fafd;
 }
 .contacto-bg {
-    background: #815034;
+    background: linear-gradient(120deg, #30cfd0 0%, #f5fafd 100%);
 }
 .contacto-bg h2,
 .contacto-bg p {
