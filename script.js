@@ -32,3 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
     changeBackground();
     setInterval(changeBackground, 5000);
 });
+// Modal Calibre
+document.getElementById('btn-calibre').addEventListener('click', function() {
+  document.getElementById('modal-calibre').style.display = 'flex';
+});
+document.getElementById('close-modal').addEventListener('click', function() {
+  document.getElementById('modal-calibre').style.display = 'none';
+});
+// Opcional: cerrar si se hace click fuera del modal
+document.getElementById('modal-calibre').addEventListener('click', function(e) {
+  if(e.target === this) {
+    this.style.display = 'none';
+  }
+});
