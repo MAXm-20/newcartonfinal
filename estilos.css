@@ -67,4 +67,18 @@
   color: #333;
   cursor: pointer;
 }
+.footer-bg {
+    background: linear-gradient(120deg, #278ea5 0%, #021c1e 100%);
+    color: #fff;
+}
+.footer-bg h3,
+.footer-bg h4,
+.footer-bg a,
+.footer-bg p,
+.footer-bg address {
+    color: #fff !important;
+}
+.footer-bg .social-icons svg {
+    fill: #f5fafd;
+}
 
