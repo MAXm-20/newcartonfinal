@@ -81,4 +81,23 @@
 .footer-bg .social-icons svg {
     fill: #f5fafd;
 }
+.contacto-bg {
+    background: linear-gradient(120deg, #30cfd0 0%, #278ea5 100%);
+    color: #fff;
+}
+.contacto-bg h2,
+.contacto-bg p,
+.contacto-bg a {
+    color: #fff !important;
+}
+.contacto-bg a {
+    background: #021c1e;
+    color: #fff !important;
+    border: none;
+    transition: background 0.3s;
+}
+.contacto-bg a:hover {
+    background: #278ea5;
+    color: #fff;
+}
 
