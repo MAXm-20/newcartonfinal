@@ -82,7 +82,7 @@
     fill: #f5fafd;
 }
 .contacto-bg {
-    background: linear-gradient(120deg, #30cfd0 0%, #f5fafd 100%);
+    background: #e9edf6;
 }
 .contacto-bg h2,
 .contacto-bg p {
@@ -98,4 +98,5 @@
     background: #021c1e;
     color: #fff;
 }
+
 
