@@ -82,22 +82,19 @@
     fill: #f5fafd;
 }
 .contacto-bg {
-    background: linear-gradient(120deg, #30cfd0 0%, #278ea5 100%);
-    color: #fff;
+    background: linear-gradient(120deg, #30cfd0 0%, #f5fafd 100%);
 }
 .contacto-bg h2,
-.contacto-bg p,
-.contacto-bg a {
-    color: #fff !important;
+.contacto-bg p {
+    color: #222 !important; /* negro suave */
 }
 .contacto-bg a {
-    background: #021c1e;
+    background: #278ea5;
     color: #fff !important;
     border: none;
     transition: background 0.3s;
 }
 .contacto-bg a:hover {
-    background: #278ea5;
+    background: #021c1e;
     color: #fff;
 }
-
