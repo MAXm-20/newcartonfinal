@@ -98,5 +98,10 @@
     background: #021c1e;
     color: #fff;
 }
+ /* fondo de la pagina inicio */
+body {
+    background-color: #e9edf6;
+}
+ /* fondo de la pagina fin */
 
 
