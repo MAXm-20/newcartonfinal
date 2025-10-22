@@ -73,7 +73,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Venta de cartón</h3>
                     <p class="text-gray-600 mb-4">Cartón gris compacto ecológico al por mayor y menor, a granel y refilado.</p>
-                    <button class="btn">Más información →</button>
+                    <button class="info-btn" data-id="1">Más información</button>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
@@ -81,7 +81,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Bases de cartón para tortas</h3>
                     <p class="text-gray-600 mb-4">Circulares, blondas y rectangulares en blanco, dorado, plateado y personalizadas.</p>
-                    <button class="btn">Más información →</button>
+                    <button class="info-btn" data-id="2">Más información</button>
                 </div>
             </div>
             <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden card-hover">
@@ -89,7 +89,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Cajas de cartón</h3>
                     <p class="text-gray-600 mb-4">Cajas resistentes y personalizadas para embalaje y almacenamiento.</p>
-                    <button class="btn">Más información →</button>
+                    <button class="info-btn" data-id="3">Más información</button>
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Servicio de corte</h3>
                     <p class="text-gray-600 mb-4">Corte preciso de materiales con estándares de calidad para piezas uniformes.</p>
-                    <button class="btn">Más información →</button>
+                    <button class="info-btn" data-id="4">Más información</button>
                 </div>
             </div>
             <div class="bg-gray-50 rounded-lg shadow-md border border-gray-300 overflow-hidden card-hover">
@@ -115,7 +115,7 @@
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Servicio de troquelado</h3>
                     <p class="text-gray-600 mb-4">Troquelado de alta precisión para empaques, etiquetas y formas personalizadas.</p>
-                    <button class="btn">Más información →</button>
+                    <button class="info-btn" data-id="5">Más información</button>
                 </div>
             </div>
         </div>
@@ -192,8 +192,17 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Modal de información -->
+<div id="info-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div id="modal-gallery"></div>
+  </div>
+</div>
+
 </body>
 </html>
+
 
 
 
