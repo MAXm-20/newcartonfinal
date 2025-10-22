@@ -45,3 +45,34 @@ document.getElementById('modal-calibre').addEventListener('click', function(e) {
     this.style.display = 'none';
   }
 });
+// para abajo +info
+const modal = document.getElementById('info-modal');
+const gallery = document.getElementById('modal-gallery');
+const closeBtn = document.querySelector('.close-btn');
+
+const infoData = {
+  1: [
+    { img: 'imagen1.jpg', desc: 'Descripción de imagen 1' },
+    { img: 'imagen2.jpg', desc: 'Descripción de imagen 2' }
+  ],
+  2: [
+    { img: 'imagen3.jpg', desc: 'Otra descripción' }
+  ]
+};
+
+document.querySelectorAll('.info-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const id = btn.getAttribute('data-id');
+    const items = infoData[id] || [];
+    gallery.innerHTML = items.map(item =>
+      `<div><img src="${item.img}" alt=""><p>${item.desc}</p></div>`
+    ).join('');
+    modal.classList.remove('hidden');
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.classList.add('hidden');
+});
+
+
