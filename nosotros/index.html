@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros — Cartoneria Orvi E.I.R.L</title>
+    <meta name="description" content="Conoce la historia y valores de Cartoneria Orvi E.I.R.L, empresa peruana dedicada a la fabricación y venta de cartón.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="nosotros.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar__inner">
+            <a href="../index.html" class="navbar__brand">
+                <img src="../imgs/logotipo.jpg" alt="Cartoneria Orvi" class="navbar__logo">
+                <span class="navbar__title">Cartoneria Orvi</span>
+            </a>
+            <ul class="navbar__links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../productos/index.html">Productos</a></li>
+                <li><a href="../servicios/index.html">Servicios</a></li>
+                <li><a href="index.html" class="active">Nosotros</a></li>
+                <li><a href="../contacto/index.html">Contacto</a></li>
+            </ul>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="navbar__mobile" id="mobile-menu">
+            <a href="../index.html">Inicio</a>
+            <a href="../productos/index.html">Productos</a>
+            <a href="../servicios/index.html">Servicios</a>
+            <a href="index.html" class="active">Nosotros</a>
+            <a href="../contacto/index.html">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-header__title">Sobre Nosotros</h1>
+            <p class="page-header__sub">Empresa peruana comprometida con la calidad</p>
+        </div>
+    </header>
+
+    <!-- QUIÉNES SOMOS -->
+    <section class="section" id="quienes-somos">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-text">
+                    <span class="about-tag">Nuestra historia</span>
+                    <h2>¿Quiénes somos?</h2>
+                    <p>Cartoneria Orvi E.I.R.L es una empresa peruana dedicada a la fabricación y comercialización de cartón gris compacto y paja, ubicada en Lurigancho-Chosica, Lima. Somos una empresa puntual y responsable que brinda productos de calidad a precios competitivos.</p>
+                    <p>Fabricamos cartón resistente desde el calibre #06 hasta el #20, disponible al por mayor y menor. Atendemos a clientes de todo Lima y provincias, con entregas puntuales y servicio personalizado.</p>
+                    <div class="about-ruc">
+                        <i class="fas fa-id-card"></i>
+                        <span>RUC: 20613637649</span>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="../imgs/imagen1.jpg" alt="Cartoneria Orvi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISIÓN Y VISIÓN -->
+    <section class="section mision-vision">
+        <div class="container">
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <div class="mv-card__icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Misión</h3>
+                    <p>Ofrecer productos de cartón de alta calidad a precios competitivos, con atención personalizada y entregas puntuales que superen las expectativas de nuestros clientes.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-card__icon"><i class="fas fa-eye"></i></div>
+                    <h3>Visión</h3>
+                    <p>Ser la cartonería de referencia en Lima y provincias, reconocida por la calidad de sus productos, la innovación en sus procesos y el compromiso con sus clientes.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-card__icon"><i class="fas fa-heart"></i></div>
+                    <h3>Valores</h3>
+                    <p>Puntualidad, responsabilidad, honestidad y compromiso con la calidad son los pilares que guían cada uno de nuestros procesos y relaciones comerciales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="section" id="ubicacion">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dónde estamos</h2>
+                <p class="section-subtitle">
+                    <a href="https://maps.app.goo.gl/qp3MJ5mFarNZxA3NA" target="_blank" style="color: var(--color-primary); font-weight: 600;">
+                        <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+                    </a>
+                </p>
+            </div>
+            <div class="ubicacion-grid">
+                <div class="ubicacion-info">
+                    <div class="ubicacion-dato">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Dirección</strong>
+                            <p>Com. Campesina Viñas de Media Luna<br>Lurigancho-Chosica, Lima, Perú</p>
+                        </div>
+                    </div>
+                    <div class="ubicacion-dato">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Teléfonos</strong>
+                            <p>967 598 773<br>912 556 408</p>
+                        </div>
+                    </div>
+                    <div class="ubicacion-dato">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Correo</strong>
+                            <p>cartoneriaorvieirl@mail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapa-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.5418750930957!2d-76.9244113!3d-11.9802908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x64320fbd5af1aeff%3A0x47ba95f74ce41239!2sCartoneria%20Orvi%20E.I.R.L!5e0!3m2!1ses!2spe!4v1692544558391!5m2!1ses!2spe"
+                        width="100%" height="320" style="border:0; border-radius: 0.75rem;" allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <h3>Cartoneria Orvi E.I.R.L</h3>
+                <p>Soluciones profesionales en cartón para impulsar tu negocio.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Páginas</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../productos/index.html">Productos</a></li>
+                    <li><a href="../servicios/index.html">Servicios</a></li>
+                    <li><a href="index.html">Nosotros</a></li>
+                    <li><a href="../contacto/index.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li>Venta de Cartón</li>
+                    <li>Corte de cartón</li>
+                    <li>Troquelado</li>
+                    <li>Bases para tortas</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contacto</h4>
+                <address>
+                    <p>Com. Campesina Viñas de Media Luna</p>
+                    <p>Lima, Lurigancho-Chosica, Perú</p>
+                    <p>cartoneriaorvieirl@mail.com</p>
+                    <p>967 598 773 / 912 556 408</p>
+                </address>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2025 Cartoneria Orvi E.I.R.L — Todos los derechos reservados.</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/caroneria.orvi.eirl/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@cartoneriaorvigmail.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/51967598773" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../global.js"></script>
+    <script src="nosotros.js"></script>
+</body>
+</html>

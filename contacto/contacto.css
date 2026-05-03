@@ -1,0 +1,209 @@
+/* ============================================
+   CONTACTO.CSS
+   ============================================ */
+
+.page-header {
+    background: linear-gradient(135deg, #278ea5 0%, #021c1e 100%);
+    color: #fff;
+    padding: 3.5rem 0 2.5rem;
+    text-align: center;
+}
+
+.page-header__title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.page-header__sub {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.05rem;
+}
+
+/* --- Grid contacto --- */
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3.5rem;
+    align-items: start;
+}
+
+/* --- Info contacto --- */
+.contacto-info h2,
+.contacto-form-wrap h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    margin-bottom: 0.75rem;
+}
+
+.contacto-info > p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+}
+
+.contacto-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.contacto-item__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #e0f2fe;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.contacto-item strong {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-dark);
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.contacto-item p,
+.contacto-item a {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.contacto-item a:hover {
+    color: var(--color-primary);
+}
+
+/* Redes */
+.contacto-redes {
+    margin-top: 2rem;
+}
+
+.contacto-redes strong {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-dark);
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.redes-iconos {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.redes-iconos a {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--color-dark);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: background var(--transition), transform var(--transition);
+}
+
+.redes-iconos a:hover {
+    background: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+/* --- Formulario --- */
+.contacto-form-wrap {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1.5px solid #d1d5db;
+    border-radius: var(--radius);
+    padding: 0.65rem 0.9rem;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--color-text);
+    background: #fafafa;
+    transition: border-color var(--transition), box-shadow var(--transition);
+    outline: none;
+    width: 100%;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+    background: #fff;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: #ef4444;
+}
+
+.form-notice {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    min-height: 1.2rem;
+}
+
+.form-notice.success { color: #16a34a; }
+.form-notice.error   { color: #dc2626; }
+
+/* --- Mapa --- */
+.mapa-wrapper {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
